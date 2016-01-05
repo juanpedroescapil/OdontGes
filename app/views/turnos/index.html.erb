@@ -1,0 +1,129 @@
+<p id="notice"><%= notice %></p>
+<% if @tarjes.empty? %>
+  <h3> (Debe cargar Medios de Pago para poder operar compras) </h3>
+<% else %>
+ <div class="form-inputs">
+   <div class="row">
+    <div class="large-6 columns">
+      <h2> Mis compras</h2>
+    </div>
+    
+    <div class="large-4 columns">
+    </div>
+    <div class="large-4 columns">
+    </div>
+    <div class="large-2 columns">
+        <%= link_to '+ Compra', new_compra_tarje_path,  :class => "button expand" %>
+    </div>
+  </div>
+</div>
+
+<br>
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel1">Consumos del Período:</a></li>
+  <li class="tab-title"><a href="#panel2">Historial Consumos:</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+   <div class="panel">
+    <%= form_tag compra_tarjes_path, :method => 'get' do %>
+      <div class="form-inputs">
+        <div class="row">
+          <div class="large-4 columns">
+            <%= text_field_tag :compra_tarje_date, params[:date], :placeholder => "Seleccione mes ..." %>
+          </div>
+          <div class="large-4 columns">
+            <%= submit_tag 'Buscar', :class => "button tiny" %>
+          </div>
+          
+          <div class="large-4 columns">
+           <% if (params[:compra_tarje_date]) %>
+            <p>(Seleccionado/actual: <%= params[:compra_tarje_date].to_date %>)</p>
+            <% else %>
+            <p>(Seleccionado/actual: <%= DateTime.now.to_date %>)</p>
+          <% end %>
+          </div>
+            
+          
+        </div>
+      </div>
+    <% end %>
+   </div>
+   
+ 
+ 
+
+  <table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>Fecha compra:</th>
+        <th>Fecha primer pago:</th>
+        <th>Lugar:</th>
+        <th>Medio Pago:</th>
+        <th>Restantes*:</th>
+    	  <th>Período $:</th>
+    	  <th>Total $:</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @sumTot= 0 %>
+      <% @compra_tarjes.each do |compra_tarje| %>
+        <% if (valida_cuota(compra_tarje, params[:compra_tarje_date])) %>
+          <tr>
+            <td><%= compra_tarje.date_compra %></td>
+            <td><%= compra_tarje.date %></td>
+            <td><%= compra_tarje.lugar %></td>
+            <td><%= Tarje.find(compra_tarje.tarje_id).nombre %></td>
+            <td><%= calculate_tarje_cuot_rest(compra_tarje, params[:compra_tarje_date]) %></td>
+    		    <td><%= number_to_currency(calculate_monto_par(compra_tarje), precision: 2) %></td>
+    		    <td><%= number_to_currency(compra_tarje.monto, precision: 2) %></td>
+            <td><%= link_to 'Show', compra_tarje %></td>
+            <td><%= link_to 'Edit', edit_compra_tarje_path(compra_tarje) %></td>
+            <td><%= link_to 'Destroy', compra_tarje, method: :delete, data: { confirm: 'Seguro quiere borrar?' } %></td>
+            <% @sumTot= @sumTot + calculate_monto_par(compra_tarje) %>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table> 
+  <p>*Mes actual incluido</p>
+  
+   <p> Total: <%= number_with_precision(@sumTot, :precision => 2) %> </p>
+    
+    
+
+
+
+
+</div>
+<div class="content" id="panel2">
+ <table id="example2" class="display" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+        <th>Fecha:</th>
+        <th>Lugar:</th>
+        <th>Medio Pago:</th>
+        <th>Total $:</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @compra_tarjes.each do |compra_tarje| %>
+        <tr>
+          <td><%= compra_tarje.date %></td>
+          <td><%= compra_tarje.lugar %></td>
+          <td><%= Tarje.find(compra_tarje.tarje_id).nombre %></td>
+          <td><%= number_to_currency(compra_tarje.monto, precision: 2) %></td>
+          <td><%= link_to 'Show', compra_tarje %></td>
+          <td><%= link_to 'Edit', edit_compra_tarje_path(compra_tarje) %></td>
+          <td><%= link_to 'Destroy', compra_tarje, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table> 
+  </div>
+</div>
+<% end %>

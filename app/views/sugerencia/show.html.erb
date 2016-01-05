@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @sugerencia.fecha %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @sugerencia.date %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @sugerencia.titulo %>
+</p>
+
+<p>
+  <strong>Detalle:</strong>
+  <%= @sugerencia.detalle %>
+</p>
+
+<%= link_to 'Edit', edit_sugerencium_path(@sugerencia) %> |
+<%= link_to 'Back', sugerencia_path %>

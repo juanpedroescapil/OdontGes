@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lugar:</strong>
+  <%= @compra_tarje.lugar %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @compra_tarje.date %>
+</p>
+
+<p>
+  <strong>Monto:</strong>
+  <%= @compra_tarje.monto %>
+</p>
+
+<p>
+  <strong>Cantcuot:</strong>
+  <%= @compra_tarje.cantcuot %>
+</p>
+
+<p>
+  <strong>Detalle:</strong>
+  <%= @compra_tarje.detalle %>
+</p>
+
+<p>
+  <strong>Tarjeta:</strong>
+  <%= Tarje.find(@compra_tarje.tarje_id).nombre %>
+</p>
+
+<%= link_to 'Edit', edit_compra_tarje_path(@compra_tarje) %> |
+<%= link_to 'Back', compra_tarjes_path %>

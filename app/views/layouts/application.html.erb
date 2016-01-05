@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="http://foundation.zurb.com/docs/assets/js/all.js"></script>
+  	<title><%= content_for?(:title) ? yield(:title) : "RTarje" %></title>
+    <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+  	<%= stylesheet_link_tag    "application" %>
+  	<%= javascript_include_tag "vendor/modernizr" %>
+
+
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+
+        <!-- Navigation -->
+
+        <div class="row">
+          <div class="large-12 columns">
+
+            <nav class="top-bar">
+              <% if current_user %>
+              <ul class="title-area">
+                <!-- Title Area -->
+                <li class="name">
+                  <h1><%= link_to 'Inicio',  root_path %></h1>
+                </li>
+              </ul>
+               <% end %>
+              <section class="top-bar-section">
+                </ul>
+                
+                <!-- Right Nav Section -->
+                <ul class="right">
+                   <li class="divider"></li>
+                   
+                   
+                   
+                    <% if current_user %>
+                      <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+                     <li class="divider"></li>
+                     <li><%= link_to 'Categorias', categoria_path %></li>
+                     <li class="divider"></li>
+                     <li><%= link_to 'Medios de pago', tarjes_path %></li>
+                      <li class="divider"></li>
+                    <li><%= link_to 'Mis Compras', compra_tarjes_path %></li>
+                    <li class="divider"></li>
+
+                    <li class="has-dropdown not-click">
+                    <a href="#"><%= current_user.username %></a>
+                     
+                      <ul class="dropdown">
+                        <li><%= link_to 'Profile', edit_user_registration_path %></li>
+                        <li><%= link_to 'Logout', destroy_user_session_path, :method => 'delete' %></li>
+                        <li class="divider"></li>
+                      </ul>
+                    </li>
+                  <% else %>
+                    <li><%= link_to 'Login', new_user_session_path %></li>
+                    <li class="divider"></li>
+                    <li><%= link_to 'Register', new_user_registration_path %></li>
+                    <li class="divider"></li>
+                  <% end %>
+                </ul>
+              </section>
+            </nav>
+            <!-- End Top Bar -->
+          </div>
+        </div>
+        <!-- End Navigation -->
+
+        <!-- Flash messages -->
+        <div class="row">
+          <div class="large-12 columns">
+            <% if flash[:notice] %>
+              <div data-alert class="alert-box success">
+                <a href="#" class="close">&times;</a>
+                <%= flash[:notice] %>
+              </div>
+            <% end %>
+
+            <% if flash[:alert] %>
+              <div data-alert class="alert-box alert">
+                <a href="#" class="close">&times;</a>
+                <%= flash[:alert] %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <!-- End Flash messages -->
+
+        <!-- Content -->
+        <div class="row">
+          <div class="large-12 columns">
+            <%= yield %>
+          </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Footer -->
+        <footer class="row">
+          <div class="large-12 columns"><hr />
+            <div class="row">
+              <div class="large-6 columns">
+                <p>&copy; Copyright Juan Pedro Escapil.</p>
+              </div>
+
+              <div class="large-6 columns">
+                <ul class="inline-list right">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Etc..</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer -->
+
+      </div>
+    </div>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<div class="row">
+    <div class="large-6 columns">
+   <h2>Medios de pago </h2>
+    </div>
+    <div class="large-4 columns">
+    </div>
+    <div class="large-4 columns">
+    </div>
+    <div class="large-2 columns">
+        <%= link_to '+ Medio Pago', new_tarje_path,  :class => "button expand" %> <br>
+    </div>
+  </div>
+
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Color</th>
+      <th>Banco</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tarjes.each do |tarje| %>
+      <tr>
+        <td><%= tarje.nombre %></td>
+        <td><%= tarje.color %></td>
+        <td><%= tarje.banco %></td>
+        <td><%= link_to 'Show', tarje %></td>
+        <td><%= link_to 'Edit', edit_tarje_path(tarje) %></td>
+        <td><%= link_to 'Destroy', tarje, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

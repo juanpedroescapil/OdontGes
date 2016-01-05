@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lugar: MyString
+  date: MyString
+  monto: 1.5
+  cantcuot: 1
+  detalle: MyString
+
+two:
+  lugar: MyString
+  date: MyString
+  monto: 1.5
+  cantcuot: 1
+  detalle: MyString

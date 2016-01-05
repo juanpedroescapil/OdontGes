@@ -1,0 +1,116 @@
+<% if current_user %>
+<p></p>
+<p></p>
+<p></p>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#panel1">Período Actual:</a></li>
+  <li class="tab-title"><a href="#panel2">Siguiente Periodo:</a></li>
+</ul>
+<div class="tabs-content">
+  <div class="content active" id="panel1">
+    <h3> Consumos del período actual: </h3>
+      <% @sumTot= 0 %>
+      <table>
+        <thead>
+          <tr>
+            <th width="300px;"> Medio pago: </th>
+            <th width="300px;"> Total: </th>
+         </tr>
+        </thead>
+        <tbody> 
+          <% @tarjes.each do |tarje| %>
+          <tr>
+            <% @sum = 0 %>
+		        <% @compra_tarje.each do |compra| %>
+  		          <% if ((compra.tarje_id == tarje.id ) && ((((compra.categoria.year - DateTime.now.to_date.year) * 12) + (compra.categoria.month - DateTime.now.to_date.month)) == 0 )) %>
+  			          <% @sum = @sum + (compra.monto / compra.cantcuot) %>
+  			        <% end %>
+  		      <% end %>
+  		      <td> 
+  		        <%= tarje.nombre %> 
+  		      </td>
+	          <td>
+	            <%= number_with_precision(@sum, :precision => 2) %>
+	         </td>
+            <% @sumTot= @sumTot + @sum %>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <table role="grid">
+        <thead>
+          <tr>
+            <th width="600px"; align="center;">Total Consumo del período/mes:</th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr>
+            <td><%= number_with_precision(@sumTot, :precision => 2) %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="content" id="panel2">
+       <h3> Consumos del período actual: </h3>
+      <% @sumTot= 0 %>
+      <table>
+        <thead>
+          <tr>
+            <th width="300px;"> Medio pago: </th>
+            <th width="300px;"> Total: </th>
+         </tr>
+        </thead>
+        <tbody> 
+          <% @tarjes.each do |tarje| %>
+          <tr>
+            
+            <% @sum = 0 %>
+		        <% @compra_tarje.each do |compra| %>
+  		          <% if ((compra.tarje_id == tarje.id ) && (((DateTime.now.to_date.year - compra.date.year) * 12) + (DateTime.now.to_date.month - compra.date.month) >= -1) && (compra.cantcuot - (((DateTime.now.to_date.year - compra.date.year) * 12) + ( DateTime.now.to_date.month - compra.date.month)) > 1)) %>
+  			          <% @sum = @sum + (compra.monto / compra.cantcuot) %>
+  			          
+  			        <% end %>
+  		      <% end %>
+  		      <td> <%= tarje.nombre %> </td>
+  			           <td><%= number_with_precision(@sum, :precision => 2) %></td>
+           
+            <% @sumTot= @sumTot + @sum %>
+          </tr>
+        </tbody>
+        <% end %>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th width="600px;">Total Consumo del período/mes:</th>
+          </tr>
+        </thead>
+        <tbody> 
+          <tr>
+            <td><%= number_with_precision(@sumTot, :precision => 2) %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+<% else %>
+  <div class="panel">
+    <p><%= Time.now.strftime("%d/%m/%Y") %></p>
+    <h1>Registre sus compras!!</h1>
+    <p>La manera más simple de administrar sus finanzas.</p>
+    <%= link_to "Comenzar hoy", new_user_registration_path, :class => "button button-large" %>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="large-8 columns">
+      <h3>Sobre la aplicación ...</h3>
+      <p>Usted puede organizar sus finanzas con esta herramienta. Administrar gastos diarios tanto sea en efectivo como con sus tarjetas de débito o crédito. </p>
+    </div>
+  </div>
+<% end %>

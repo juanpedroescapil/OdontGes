@@ -1,0 +1,60 @@
+<%= form_for @compra_tarje do |f| %>
+  <div class="form-inputs">
+   <div class="row">
+    <div class="large-4 columns">
+      <label>Tag:
+      <% if !@categoria.nil? %>
+        <%= f.select :categorium_id, options_from_collection_for_select(@categoria, :id, :title, @compra_tarje.categorium_id)%>
+      <% else %>
+        <p>(no tags for select)</p>
+       <% end %>
+      </label>
+    </div>
+    
+    <div class="large-4 columns">
+      <label>Fecha compra:
+       <%= f.text_field :date_compra, :placeholder => "Fecha Compra" %>
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Fecha primer pago:
+       <%= f.text_field :date, :placeholder => "Fecha primer pago" %>
+      </label>
+    </div>
+    </div>
+    <div class="row">
+    <div class="large-8 columns">
+      <label>Lugar Compra:
+       <%= f.text_field :lugar, :placeholder => "Lugar" %>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+      <label>Medio Pago:
+        <%= f.select :tarje_id, options_from_collection_for_select(@tarjes, :id, :nombre, @compra_tarje.tarje_id)%>
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Cantidad Cuotas:
+        <%= f.text_field :cantcuot, :placeholder => "Cuotas" %>
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Monto
+       <%= f.text_field :monto, :placeholder => "Monto" %>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Detalle:
+       <%= f.text_field :detalle, :placeholder => "Detalle" %>
+      </label>
+    </div>
+  </div>
+  </div>
+    <div class="form-actions">
+      <%= f.button :submit %>
+  </div>
+<% end %>

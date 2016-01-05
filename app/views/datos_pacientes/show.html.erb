@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @tarje.nombre %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @tarje.color %>
+</p>
+
+<p>
+  <strong>Banco:</strong>
+  <%= @tarje.banco %>
+</p>
+
+<%= link_to 'Edit', edit_tarje_path(@tarje) %> |
+<%= link_to 'Back', tarjes_path %>

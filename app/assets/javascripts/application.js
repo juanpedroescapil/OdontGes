@@ -12,5 +12,22 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jsapi
+//= require chartkick
+//= require dataTables/jquery.dataTables
+//= require foundation
+//= require pickadate/picker
+//= require pickadate/picker.date
+//= require pickadate/picker.time
 //= require turbolinks
 //= require_tree .
+
+$(function(){ $(document).foundation();
+	 $('#example').dataTable();
+     $('#compra_tarje_date').pickadate();
+     $('#compra_tarje_date_compra').pickadate();
+     $('#sugerencium_date').pickadate();
+});
+
+
+    

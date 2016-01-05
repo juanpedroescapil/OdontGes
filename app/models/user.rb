@@ -4,8 +4,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :rememberable, :validatable
 
-  has_many :turnos
-  has_many :sugerencia
+ 
+  has_many :pacientes
+  has_many :obra_socials
+
 
   validates :username,
     presence: true,

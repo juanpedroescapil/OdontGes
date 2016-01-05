@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  resources :pacientes
   resources :sugerencia
-  resources :datos_pacientes
-  resources :turnos
-  resources :profiles
+  resources :obra_socials
+  
+  
 
   devise_for :users
   

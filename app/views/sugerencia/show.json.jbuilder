@@ -1,1 +1,1 @@
-json.extract! @sugerencium, :id, :fecha, :date, :titulo, :detalle, :created_at, :updated_at
+json.extract! @sugerencium, :id, :fecha, :titulo, :detalle, :created_at, :updated_at

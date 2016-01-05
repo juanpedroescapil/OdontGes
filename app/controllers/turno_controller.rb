@@ -1,0 +1,2 @@
+class TurnoController < ApplicationController
+end

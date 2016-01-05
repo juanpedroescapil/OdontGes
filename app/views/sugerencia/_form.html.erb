@@ -1,24 +1,13 @@
-<%= simple_form_for(@sugerencia) do |f| %>
+<%= simple_form_for(@sugerencium) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    
-    <div class="large-4 columns">
-      <label>Fecha:
-       <%= f.text_field :date, :placeholder => "Fecha:" %>
-      </label>
-    </div>
-    
-    
- <div class="large-4 columns">
+    <%= f.input :fecha %>
     <%= f.input :titulo %>
-  </div>
-   <div class="large-4 columns">
     <%= f.input :detalle %>
-      </div>
   </div>
 
- <div class="large-2 columns">
-      <%= f.button :submit, 'Guardar' %>
+  <div class="form-actions">
+    <%= f.button :submit %>
   </div>
 <% end %>

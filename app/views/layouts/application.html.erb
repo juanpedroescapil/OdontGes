@@ -52,13 +52,9 @@
                     <% if current_user %>
                       <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
                      <li class="divider"></li>
-                     <li><%= link_to 'Categorias', categoria_path %></li>
+                     <li><%= link_to 'Pacientes', pacientes_path %></li>
                      <li class="divider"></li>
-                     <li><%= link_to 'Medios de pago', tarjes_path %></li>
-                      <li class="divider"></li>
-                    <li><%= link_to 'Mis Compras', compra_tarjes_path %></li>
-                    <li class="divider"></li>
-
+                     
                     <li class="has-dropdown not-click">
                     <a href="#"><%= current_user.username %></a>
                      

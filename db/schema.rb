@@ -11,44 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160105195189) do
+ActiveRecord::Schema.define(version: 20151024034304) do
 
-  create_table "datos_pacientes", force: :cascade do |t|
-    t.string   "ape_nom"
-    t.string   "string"
-    t.string   "domicilio"
-    t.string   "telefono"
+  create_table "obra_socials", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "datos_profes", force: :cascade do |t|
-    t.string   "ape_nom"
+  create_table "pacientes", force: :cascade do |t|
+    t.string   "apellido"
+    t.string   "nombre"
+    t.string   "tipo_doc"
+    t.string   "num_doc"
+    t.date     "fecha_nac"
+    t.string   "obra_soc"
+    t.string   "numero_afil"
+    t.string   "grupo_sang"
+    t.string   "direccion"
+    t.string   "ciudad"
     t.string   "telefono"
-    t.string   "especialidad"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "email"
+    t.text     "comentarios"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "sugerencia", force: :cascade do |t|
-    t.string   "fecha"
-    t.string   "date"
+    t.date     "fecha"
     t.string   "titulo"
     t.text     "detalle"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "user_id"
-  end
-
-  add_index "sugerencia", ["user_id"], name: "index_sugerencia_on_user_id"
-
-  create_table "turnos", force: :cascade do |t|
-    t.integer  "id_paciente"
-    t.integer  "id_profe"
-    t.string   "date"
-    t.string   "hora"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|

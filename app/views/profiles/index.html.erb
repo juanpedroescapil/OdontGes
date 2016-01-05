@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>User</th>
-      <th># Compras</th>
+      
     </tr>
   </thead>
 
@@ -12,7 +12,7 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= link_to user.username, profiles_path(user) %></td>
-        <td><%= user.compra_tarjes.count %></td>
+        
       </tr>
     <% end %>
   </tbody>

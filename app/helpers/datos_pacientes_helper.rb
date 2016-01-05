@@ -1,2 +1,2 @@
-module TarjesHelper
+module DatosPacientesHelper
 end

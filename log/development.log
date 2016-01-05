@@ -1,0 +1,311 @@
+
+
+Started GET "/" for 186.138.252.62 at 2016-01-05 15:50:11 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.4ms)
+  [1m[36m (19.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (8.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateUsers (20160105131925)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /home/ubuntu/workspace/db/migrate/20160105131925_devise_create_users.rb:37)
+  [1m[35m (0.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160105131925"]]
+  [1m[36m (17.5ms)[0m  [1mcommit transaction[0m
+Migrating to AddUserNameToUser (20160105132655)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "username" varchar[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.6ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160105132655"]]
+  [1m[36m (16.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDatosPacientes (20160105142028)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "datos_pacientes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ape_nom" varchar, "string" varchar, "domicilio" varchar, "telefono" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160105142028"]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTurnos (20160105142521)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "turnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_paciente" integer, "id_profe" integer, "date" varchar, "hora" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160105142521"]]
+  [1m[36m (15.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateDatosProfes (20160105142622)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "datos_profes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "ape_nom" varchar, "telefono" varchar, "especialidad" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160105142622"]]
+  [1m[36m (31.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSugerencia (20160105185827)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "sugerencia" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fecha" varchar, "date" varchar, "titulo" varchar, "detalle" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160105185827"]]
+  [1m[36m (21.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddIndexUserIdSugerencia (20160105195189)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "sugerencia" ADD "user_id" integer[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_sugerencia_on_user_id" ON "sugerencia" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160105195189"]]
+  [1m[35m (16.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_sugerencia_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_sugerencia_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 186.138.252.62 at 2016-01-05 15:51:21 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (Couldn't find DatosPacientesHelper, expected it to be defined in helpers/datos_pacientes_helper.rb):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/site_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (50.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (33.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (281.3ms)
+
+
+Started GET "/" for 186.138.252.62 at 2016-01-05 15:52:22 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 11384ms (Views: 11378.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/chartkick-0c0adeee73f6725ba71ca20897ed9f2f.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:34 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/compra_tarjes-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation_and_overrides-39eb122ac75d89f40e711cf3f6e6781c.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/categoria-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/profile-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds-fbd5010c31c1e71c9482455b46e0d443.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/site-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sugerencia-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tarjes-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-dcf18a155ec42beecb797ff63e95f567.css?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-2ebc4d7dee7ed5002a2ec81cda5c42ea.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vendor/modernizr-f1722e6613935c62fd604c2c60e59a9a.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-efcd99fdaa88344bc64c4e9297b45619.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-4b992ee9fec0c5b3d86850e54fb1d292.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/categoria-a669128dbe8195a3570b7916f9695283.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:35 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/compra_tarjes-a669128dbe8195a3570b7916f9695283.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:36 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jsapi-0bc49bee7e93b7f6987b7686f1d854f8.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:36 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/profile-a669128dbe8195a3570b7916f9695283.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:36 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/site-a669128dbe8195a3570b7916f9695283.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:36 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sugerencia-a669128dbe8195a3570b7916f9695283.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:36 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tarjes-a669128dbe8195a3570b7916f9695283.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:36 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-ffe30e7d7e89cb3acd81b9ba5a71561d.js?body=1" for 186.138.252.62 at 2016-01-05 15:52:36 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 186.138.252.62 at 2016-01-05 15:53:06 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 626ms (Views: 624.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 186.138.252.62 at 2016-01-05 15:53:13 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 609ms (Views: 607.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 186.138.252.62 at 2016-01-05 16:13:34 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 647ms (Views: 608.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 186.138.252.62 at 2016-01-05 16:13:42 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (386.8ms)
+Completed 200 OK in 925ms (Views: 896.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 186.138.252.62 at 2016-01-05 16:14:00 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G57hp/lGtdGB0SGY6sPar2XhZkfhsWHr+5Pl/uNVxpbR6wO1xHFyZnKx+w+czeid9UYKaBCmBomjNac6G7FQpw==", "user"=>{"username"=>"juanpedroescapil", "email"=>"juanpedroescapil@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: username
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'juanpedroescapil@gmail.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (158.0ms)
+Completed 200 OK in 862ms (Views: 670.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 186.138.252.62 at 2016-01-05 16:14:16 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GKStQEId+zcXsqtUTM5JHXpjtvVr1N8Q1vwf8kYqlqXS0U9Sfyo8gOTSccM6wHsv6sTa2prDuHKOWl02vs4AlA==", "user"=>{"username"=>"juanpedroescapil", "email"=>"juanpedroescapil@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: username
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'juanpedroescapil@gmail.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (153.9ms)
+Completed 200 OK in 679ms (Views: 565.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 186.138.252.62 at 2016-01-05 16:14:46 +0000
+Cannot render console from 186.138.252.62! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ETTBx9ERnWXJt5NmvlA1HPOe5/knlCMCvJ6+cKio7Q7bQSPV7CZa0jrXSfHIXgcuYzmL1taDRGDkOPy0UEx7Pw==", "user"=>{"username"=>"juanpe", "email"=>"juanpedroescapil@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: username
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'juanpedroescapil@gmail.com' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (127.6ms)
+Completed 200 OK in 677ms (Views: 519.3ms | ActiveRecord: 0.8ms)

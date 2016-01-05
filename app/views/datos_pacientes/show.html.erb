@@ -2,18 +2,18 @@
 
 <p>
   <strong>Nombre:</strong>
-  <%= @tarje.nombre %>
+  <%= @datos_paciente.ape_nom %>
 </p>
 
 <p>
-  <strong>Color:</strong>
-  <%= @tarje.color %>
+  <strong>Dirección:</strong>
+  <%= @datos_paciente.direccion %>
 </p>
 
 <p>
-  <strong>Banco:</strong>
-  <%= @tarje.banco %>
+  <strong>Teléfono:</strong>
+  <%= @datos_paciente.telefono %>
 </p>
 
-<%= link_to 'Edit', edit_tarje_path(@tarje) %> |
-<%= link_to 'Back', tarjes_path %>
+<%= link_to 'Edit', edit_datos_paciente_path(@tarje) %> |
+<%= link_to 'Back', datos_paciente_path %>

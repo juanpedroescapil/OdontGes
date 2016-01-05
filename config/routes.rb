@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   resources :sugerencia
-  resources :datos_profes
   resources :datos_pacientes
   resources :turnos
   resources :profiles

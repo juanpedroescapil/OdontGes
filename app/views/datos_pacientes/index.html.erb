@@ -5,7 +5,7 @@
 
 <div class="row">
     <div class="large-6 columns">
-   <h2>Medios de pago </h2>
+   <h2>Pacientes </h2>
     </div>
     <div class="large-4 columns">
     </div>
@@ -23,22 +23,22 @@
 <table>
   <thead>
     <tr>
-      <th>Nombre</th>
-      <th>Color</th>
-      <th>Banco</th>
+      <th>Apellido y Nombre</th>
+      <th>Dirección</th>
+      <th>Teléfono</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @tarjes.each do |tarje| %>
+    <% @datos_paciente.each do |paciente| %>
       <tr>
-        <td><%= tarje.nombre %></td>
-        <td><%= tarje.color %></td>
-        <td><%= tarje.banco %></td>
-        <td><%= link_to 'Show', tarje %></td>
-        <td><%= link_to 'Edit', edit_tarje_path(tarje) %></td>
-        <td><%= link_to 'Destroy', tarje, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= paciente.ape_nom %></td>
+        <td><%= paciente.direccion %></td>
+        <td><%= paciente.telefono %></td>
+        <td><%= link_to 'Show', datos_paciente %></td>
+        <td><%= link_to 'Edit', edit_datos_paciente_path(tarje) %></td>
+        <td><%= link_to 'Destroy', datos_paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

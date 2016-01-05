@@ -30,14 +30,6 @@ ActiveRecord::Schema.define(version: 20160105195189) do
     t.datetime "updated_at",   null: false
   end
 
-  create_table "datos_proves", force: :cascade do |t|
-    t.string   "ape_nom"
-    t.string   "telefono"
-    t.string   "especialidad"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
   create_table "sugerencia", force: :cascade do |t|
     t.string   "fecha"
     t.string   "date"

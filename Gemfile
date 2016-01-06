@@ -39,6 +39,8 @@ gem 'foundation-rails'
 
 gem 'pickadate-rails'
 
+gem "simple_calendar", "~> 2.0"
+
 gem 'simple_form', '~> 3.1.0.rc2'
 
 gem 'kaminari'

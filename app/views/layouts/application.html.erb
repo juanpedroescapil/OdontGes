@@ -46,18 +46,15 @@
                 <!-- Right Nav Section -->
                 <ul class="right">
                    <li class="divider"></li>
-                   
-                   
-                   
                     <% if current_user %>
-                      <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+                     <li><%= link_to 'Turnos', turnos_path %></li>
+                     <li class="divider"></li>
+                     <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
                      <li class="divider"></li>
                      <li><%= link_to 'Pacientes', pacientes_path %></li>
                      <li class="divider"></li>
-                     
-                    <li class="has-dropdown not-click">
+                     <li class="has-dropdown not-click">
                     <a href="#"><%= current_user.username %></a>
-                     
                       <ul class="dropdown">
                         <li><%= link_to 'Profile', edit_user_registration_path %></li>
                         <li><%= link_to 'Logout', destroy_user_session_path, :method => 'delete' %></li>

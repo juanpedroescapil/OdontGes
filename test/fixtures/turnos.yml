@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id_usuario: 1
   id_paciente: 1
-  id_user: 1
   hora: MyString
   dia: MyString
 
 two:
+  id_usuario: 1
   id_paciente: 1
-  id_user: 1
   hora: MyString
   dia: MyString

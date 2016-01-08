@@ -1934,3 +1934,791 @@ Processing by SiteController#index as HTML
   Rendered /Users/juanpe/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (7.3ms)
   Rendered site/index.html.erb within layouts/application (13.3ms)
 Completed 200 OK in 369ms (Views: 367.1ms | ActiveRecord: 0.1ms)
+  [1m[36mTurno Load (0.6ms)[0m  [1mSELECT "turnos".* FROM "turnos"[0m
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 12:46:53 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 11237ms (Views: 11152.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categoria-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:05 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/compra_tarjes-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation_and_overrides-39eb122ac75d89f40e711cf3f6e6781c.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pacientes-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/scaffolds-b18c18280b9b1e8ec7b9febe9f73b656.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/profile-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/site-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sugerencia-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tarjes-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turno-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-9e413ecb684978ff525f4be39bcd92ab.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/dataTables/jquery.dataTables-1fb96d9aee9f4b3921974e65a1713c24.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pickadate/classic-7be12e5874b21c02aa163a624f2ee457.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pickadate/classic.date-35d00c7fc6c480de0a0ec386380c482d.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pickadate/classic.time-6f28fabea8aa54e877074530b4edbff1.css?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/chartkick-0c0adeee73f6725ba71ca20897ed9f2f.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/vendor/modernizr-f1722e6613935c62fd604c2c60e59a9a.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:07 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery-2ebc4d7dee7ed5002a2ec81cda5c42ea.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:08 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs-efcd99fdaa88344bc64c4e9297b45619.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:08 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jsapi-0bc49bee7e93b7f6987b7686f1d854f8.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:08 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/dataTables/jquery.dataTables-81eefa18784f8ced8e236fc36e0237ef.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:08 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation-2f9c9da547ff2044e72d0349989a895c.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:08 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.abide-a0764e9005771de5e1311499d1d253e7.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:08 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.accordion-7318e48f26663a664d18b87ec9a1e289.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.alert-c6b16186c96d927c641d89a23c1401d3.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.clearing-764901ef7e0ae5de0415292a07c0c346.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.dropdown-d9620d02feebfed6dd572df9bb26723d.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.equalizer-74447c2c14cd68637023b935c39d484a.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.interchange-a5cab6cc9e7fd3538e6dfa18811c49fd.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.joyride-c2beaa1573dacc7290ba17af7b6ddda0.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.magellan-d8d73d651cf890fe68fd44132f61c6af.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.offcanvas-f9a0725474fddcf3dd451d3b6563242f.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.orbit-5b5d1fc6987a401f35fcce351eeb1039.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.reveal-b4fdab5bf2a1ddae63e79cb0f780df72.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.slider-0c6e09d78e2236ec96589cae4cbded27.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.tab-3449abf11872d5bc2322b10ccd87ffbf.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.tooltip-c122df806606f9ce76ed6f1219be8292.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation/foundation.topbar-278ac22e638409b5d801fa55b932dbbf.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/foundation-72548e9621a9de4ddff1de1ee3e964f0.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pickadate/picker-561fe47ee4152a88cb6365adda19dc0a.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pickadate/picker.date-3b46b186905b858e64bb2866803b2a07.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:10 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pickadate/picker.time-4c3daa745677883f9f45602cea30b80a.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:11 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks-4b992ee9fec0c5b3d86850e54fb1d292.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:11 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/categoria-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:11 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/compra_tarjes-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:11 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pacientes-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:11 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/profile-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:11 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/site-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:11 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sugerencia-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:12 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/tarjes-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:12 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turno-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:12 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application-938fe99d12d9a5845f89f5e1718f2acd.js?body=1" for 170.248.184.20 at 2016-01-08 12:47:12 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 170.248.184.20 at 2016-01-08 12:48:50 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (670.9ms)
+Completed 200 OK in 1711ms (Views: 1682.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for 170.248.184.20 at 2016-01-08 12:49:01 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MhZQKSbcn0R353gL49gbRxhVcBSHJdk3SiyflPTirTdg12modkRORHfz25a4Jcdj8b4u2Pt1S/G71hRZ0dEepQ==", "user"=>{"email"=>"juanpedroescapil@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "juanpedroescapil@gmail.com"]]
+Redirected to https://odontges-juanpeodontoges.c9users.io/
+Completed 302 Found in 327ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 12:49:02 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTurno Load (0.3ms)[0m  SELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1  [["id_user", 1]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `all' for nil:NilClass):
+  app/controllers/site_controller.rb:6:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (166.0ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 12:50:55 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTurno Load (0.3ms)[0m  SELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (16.3ms)
+  Rendered site/index.html.erb within layouts/application (22.4ms)
+  [1m[36mTurno Load (0.4ms)[0m  [1mSELECT "turnos".* FROM "turnos"[0m
+Completed 500 Internal Server Error in 439ms (ActiveRecord: 2.7ms)
+
+ActionView::Template::Error (undefined local variable or method `turnos_path' for #<#<Class:0x007f9185e9f908>:0x007f9185e9ed00>):
+    50:                    
+    51:                    
+    52:                     <% if current_user %>
+    53:                     <li><%= link_to 'Turnos', turnos_path %></li>
+    54:                      <li class="divider"></li>
+    55:                       <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+    56:                      <li class="divider"></li>
+  app/views/layouts/application.html.erb:53:in `_app_views_layouts_application_html_erb__1147778058741285684_33094660'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (214.7ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 12:56:28 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.3ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (10.7ms)
+  Rendered site/index.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 453ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"turno"} missing required keys: [:id]):
+    50:                    
+    51:                    
+    52:                     <% if current_user %>
+    53:                     <li><%= link_to 'Turnos', turno_path %></li>
+    54:                      <li class="divider"></li>
+    55:                       <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+    56:                      <li class="divider"></li>
+  app/views/layouts/application.html.erb:53:in `_app_views_layouts_application_html_erb__1147778058741285684_70131496611320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.5ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 13:00:48 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.2ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (19.9ms)
+  Rendered site/index.html.erb within layouts/application (24.9ms)
+Completed 500 Internal Server Error in 358ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"turno"} missing required keys: [:id]):
+    50:                    
+    51:                    
+    52:                     <% if current_user %>
+    53:                     <li><%= link_to 'Turnos', turno_path %></li>
+    54:                      <li class="divider"></li>
+    55:                       <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+    56:                      <li class="divider"></li>
+  app/views/layouts/application.html.erb:53:in `_app_views_layouts_application_html_erb__1147778058741285684_70131496611320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (218.4ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 13:08:02 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.2ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (12.5ms)
+  Rendered site/index.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 6.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"turno"} missing required keys: [:id]):
+    50:                    
+    51:                    
+    52:                     <% if current_user %>
+    53:                     <li><%= link_to 'Turnos', turno_path %></li>
+    54:                      <li class="divider"></li>
+    55:                       <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+    56:                      <li class="divider"></li>
+  app/views/layouts/application.html.erb:53:in `_app_views_layouts_application_html_erb__1147778058741285684_70131496611320'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (46.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (158.9ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 13:08:35 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.3ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (44.1ms)
+  Rendered site/index.html.erb within layouts/application (104.8ms)
+Completed 500 Internal Server Error in 899ms (ActiveRecord: 3.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"turno"} missing required keys: [:id]):
+    50:                    
+    51:                    
+    52:                     <% if current_user %>
+    53:                     <li><%= link_to 'Turnos', turno_path %></li>
+    54:                      <li class="divider"></li>
+    55:                       <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+    56:                      <li class="divider"></li>
+  app/views/layouts/application.html.erb:53:in `_app_views_layouts_application_html_erb___1534031573871110776_39348600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (142.3ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 13:40:21 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (7.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.4ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (39.7ms)
+  Rendered site/index.html.erb within layouts/application (126.1ms)
+  [1m[35mTurno Load (0.4ms)[0m  SELECT "turnos".* FROM "turnos"
+Completed 500 Internal Server Error in 939ms (ActiveRecord: 8.9ms)
+
+ActionView::Template::Error (undefined local variable or method `turnos_path' for #<#<Class:0x0000000588ac98>:0x00000005888f38>):
+    47:                 <ul class="right">
+    48:                    <li class="divider"></li>
+    49:                     <% if current_user %>
+    50:                      <li><%= link_to 'Turnos', turnos_path %></li>
+    51:                      <li class="divider"></li>
+    52:                      <li><%= link_to 'Sugerencias!!!', sugerencia_path %></li>
+    53:                      <li class="divider"></li>
+  app/views/layouts/application.html.erb:50:in `_app_views_layouts_application_html_erb___1480526254129696770_47101700'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (115.9ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 13:57:20 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (52.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (256.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTurnos (20160108135058)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "turnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_usuario" integer, "id_paciente" integer, "hora" varchar, "dia" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+SQLite3::SQLException: table "turnos" already exists: CREATE TABLE "turnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_usuario" integer, "id_paciente" integer, "hora" varchar, "dia" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 13:58:18 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:31:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTurnos (20160108135058)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160108135058"]]
+  [1m[35m (10.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 13:59:47 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.3ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (35.4ms)
+  Rendered site/index.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 2123ms (Views: 1996.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/turnos-6e144842dfc112b55e4455d4d0d5db2b.css?body=1" for 170.248.184.20 at 2016-01-08 13:59:50 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turnos-a669128dbe8195a3570b7916f9695283.js?body=1" for 170.248.184.20 at 2016-01-08 13:59:50 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/turnos" for 170.248.184.20 at 2016-01-08 13:59:59 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#index as HTML
+  [1m[35mTurno Load (0.4ms)[0m  SELECT "turnos".* FROM "turnos"
+  Rendered turnos/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 966ms (Views: 964.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/turnos/new" for 170.248.184.20 at 2016-01-08 14:00:04 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#new as HTML
+  Rendered turnos/_form.html.erb (334.9ms)
+  Rendered turnos/new.html.erb within layouts/application (337.5ms)
+Completed 500 Internal Server Error in 354ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `id_usuario' for #<Turno:0x007f5b94d07a18>):
+    2:   <%= f.error_notification %>
+    3: 
+    4:   <div class="form-inputs">
+    5:     <%= f.input :id_usuario %>
+    6:     <%= f.input :id_paciente %>
+    7:     <%= f.input :hora %>
+    8:     <%= f.input :dia %>
+  app/views/turnos/_form.html.erb:5:in `block in _app_views_turnos__form_html_erb__2138412446802365422_70015653253300'
+  app/views/turnos/_form.html.erb:1:in `_app_views_turnos__form_html_erb__2138412446802365422_70015653253300'
+  app/views/turnos/new.html.erb:3:in `_app_views_turnos_new_html_erb___841062280574243970_70015653778240'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (192.3ms)
+
+
+Started GET "/turnos/new" for 170.248.184.20 at 2016-01-08 14:00:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#new as HTML
+  Rendered turnos/_form.html.erb (48.8ms)
+  Rendered turnos/new.html.erb within layouts/application (51.6ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `id_usuario' for #<Turno:0x000000048b7438>):
+    2:   <%= f.error_notification %>
+    3: 
+    4:   <div class="form-inputs">
+    5:     <%= f.input :id_usuario %>
+    6:     <%= f.input :id_paciente %>
+    7:     <%= f.input :hora %>
+    8:     <%= f.input :dia %>
+  app/views/turnos/_form.html.erb:5:in `block in _app_views_turnos__form_html_erb__2138412446802365422_38050380'
+  app/views/turnos/_form.html.erb:1:in `_app_views_turnos__form_html_erb__2138412446802365422_38050380'
+  app/views/turnos/new.html.erb:3:in `_app_views_turnos_new_html_erb___841062280574243970_38115800'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (43.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (163.0ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 14:02:52 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.4ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (32.2ms)
+  Rendered site/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 1784ms (Views: 1621.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/turnos" for 170.248.184.20 at 2016-01-08 14:03:06 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#index as HTML
+  [1m[35mTurno Load (0.5ms)[0m  SELECT "turnos".* FROM "turnos"
+  Rendered turnos/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 995ms (Views: 992.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/turnos/new" for 170.248.184.20 at 2016-01-08 14:03:09 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#new as HTML
+  Rendered turnos/_form.html.erb (323.9ms)
+  Rendered turnos/new.html.erb within layouts/application (327.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 1489ms (Views: 1479.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/turnos" for 170.248.184.20 at 2016-01-08 14:03:28 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnFYXvIqWgkuKYfkIYqGdhQk5VMEoCAmN8JnK++6T39tT/uA4iQiWYEUz6wufMgJ6uLy8WGHPG6gAjKJi3JzMA==", "turno"=>{"id_user"=>"1", "id_paciente"=>"1", "hora"=>"19:00", "dia"=>"01/01/2016"}, "commit"=>"Create Turno"}
+Unpermitted parameter: id_user
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "turnos" ("id_paciente", "hora", "dia", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id_paciente", 1], ["hora", "19:00"], ["dia", "01/01/2016"], ["created_at", "2016-01-08 14:03:28.633451"], ["updated_at", "2016-01-08 14:03:28.633451"]]
+  [1m[36m (16.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://odontges-juanpeodontoges.c9users.io/turnos/1
+Completed 302 Found in 28ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/turnos/1" for 170.248.184.20 at 2016-01-08 14:03:28 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTurno Load (0.5ms)[0m  SELECT  "turnos".* FROM "turnos" WHERE "turnos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered turnos/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 909ms (Views: 905.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/turnos" for 170.248.184.20 at 2016-01-08 14:03:33 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TurnosController#index as HTML
+  [1m[35mTurno Load (0.4ms)[0m  SELECT "turnos".* FROM "turnos"
+  Rendered turnos/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1196ms (Views: 1194.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sugerencia" for 170.248.184.20 at 2016-01-08 14:04:01 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SugerenciaController#index as HTML
+  [1m[35mSugerencium Load (0.3ms)[0m  SELECT "sugerencia".* FROM "sugerencia"
+  Rendered sugerencia/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1711ms (Views: 1693.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 170.248.184.20 at 2016-01-08 14:04:05 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.2ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (32.8ms)
+  Rendered site/index.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 1032ms (Views: 1028.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?start_date=2016-02-01" for 170.248.184.20 at 2016-01-08 14:04:15 +0000
+Cannot render console from 170.248.184.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SiteController#index as HTML
+  Parameters: {"start_date"=>"2016-02-01"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTurno Load (0.2ms)[0m  [1mSELECT  "turnos".* FROM "turnos" WHERE "turnos"."id_user" = ? LIMIT 1[0m  [["id_user", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/simple_calendar-2.0.3/app/views/simple_calendar/_month_calendar.html.erb (32.9ms)
+  Rendered site/index.html.erb within layouts/application (48.1ms)
+Completed 200 OK in 1153ms (Views: 1148.0ms | ActiveRecord: 0.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UpdateTurnos (20160108135059)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UpdateTurnos (20160108135059)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "country_reviews" ADD "id_user_id" integer[0m
+SQLite3::SQLException: no such table: country_reviews: ALTER TABLE "country_reviews" ADD "id_user_id" integer
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UpdateTurnos (20160108135059)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.8ms)[0m  [1mCREATE TEMPORARY TABLE "aturnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_paciente" integer, "id_user" integer, "hora" varchar, "dia" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "turnos"
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "aturnos" ("id","id_paciente","id_user","hora","dia","created_at","updated_at") VALUES (1, 1, NULL, '19:00', '01/01/2016', '2016-01-08 14:03:28.633451', '2016-01-08 14:03:28.633451')[0m
+  [1m[35m (0.7ms)[0m  DROP TABLE "turnos"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "turnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_paciente" integer, "hora" varchar, "dia" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aturnos"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "turnos" ("id","id_paciente","hora","dia","created_at","updated_at") VALUES (1, 1, '19:00', '01/01/2016', '2016-01-08 14:03:28.633451', '2016-01-08 14:03:28.633451')[0m
+  [1m[35m (0.5ms)[0m  DROP TABLE "aturnos"
+  [1m[36m (0.2ms)[0m  [1mCREATE TEMPORARY TABLE "aturnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_paciente" integer, "hora" varchar, "dia" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "turnos"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "aturnos" ("id","id_paciente","hora","dia","created_at","updated_at") VALUES (1, 1, '19:00', '01/01/2016', '2016-01-08 14:03:28.633451', '2016-01-08 14:03:28.633451')[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "turnos"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "turnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "hora" varchar, "dia" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "aturnos"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "turnos" ("id","hora","dia","created_at","updated_at") VALUES (1, '19:00', '01/01/2016', '2016-01-08 14:03:28.633451', '2016-01-08 14:03:28.633451')[0m
+  [1m[35m (0.2ms)[0m  DROP TABLE "aturnos"
+  [1m[36mSQL (7.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160108135059"]]
+  [1m[35m (19.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UpdateIduserIdpacienteTurnos (20160108135060)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to UpdateIduserIdpacienteTurnos (20160108135060)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "turnos" ADD "user_id" integer[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "turnos" ADD "paciente_id" integer
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160108135060"]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mTurno Load (9.1ms)[0m  [1mSELECT "turnos".* FROM "turnos"[0m

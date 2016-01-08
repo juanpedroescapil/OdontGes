@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
+
   resources :pacientes
   resources :sugerencia
   resources :obra_socials
-  resources :turno
+  resources :turnos
   
-  
-
   devise_for :users
   
   devise_scope :user do

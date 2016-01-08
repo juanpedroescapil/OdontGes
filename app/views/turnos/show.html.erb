@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id usuario:</strong>
+  <%= @turno.user_id %>
+</p>
+
+<p>
+  <strong>Id paciente:</strong>
+  <%= @turno.paciente_id %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @turno.hora %>
+</p>
+
+<p>
+  <strong>Dia:</strong>
+  <%= @turno.dia %>
+</p>
+
+<%= link_to 'Edit', edit_turno_path(@turno) %> |
+<%= link_to 'Back', turnos_path %>

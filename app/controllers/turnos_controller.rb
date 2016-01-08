@@ -1,31 +1,30 @@
-class TurnoController < ApplicationController
-  before_action :set_paciente, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
-  
-  # GET /pacientes
-  # GET /pacientes.json
+class TurnosController < ApplicationController
+  before_action :set_turno, only: [:show, :edit, :update, :destroy]
+
+  # GET /turnos
+  # GET /turnos.json
   def index
-    @turnos = Paciente.all
+    @turnos = Turno.all
   end
 
-  # GET /pacientes/1
-  # GET /pacientes/1.json
+  # GET /turnos/1
+  # GET /turnos/1.json
   def show
   end
 
-  # GET /pacientes/new
+  # GET /turnos/new
   def new
-    @turno = Paciente.new
+    @turno = Turno.new
   end
 
-  # GET /pacientes/1/edit
+  # GET /turnos/1/edit
   def edit
   end
 
-  # POST /pacientes
-  # POST /pacientes.json
+  # POST /turnos
+  # POST /turnos.json
   def create
-    @turno = Paciente.new(turno_params)
+    @turno = Turno.new(turno_params)
 
     respond_to do |format|
       if @turno.save
@@ -38,12 +37,12 @@ class TurnoController < ApplicationController
     end
   end
 
-  # PATCH/PUT /pacientes/1
-  # PATCH/PUT /pacientes/1.json
+  # PATCH/PUT /turnos/1
+  # PATCH/PUT /turnos/1.json
   def update
     respond_to do |format|
-      if @turno.update(paciente_params)
-        format.html { redirect_to @turno, notice: 'Paciente was successfully updated.' }
+      if @turno.update(turno_params)
+        format.html { redirect_to @turno, notice: 'Turno was successfully updated.' }
         format.json { render :show, status: :ok, location: @turno }
       else
         format.html { render :edit }
@@ -52,8 +51,8 @@ class TurnoController < ApplicationController
     end
   end
 
-  # DELETE /pacientes/1
-  # DELETE /pacientes/1.json
+  # DELETE /turnos/1
+  # DELETE /turnos/1.json
   def destroy
     @turno.destroy
     respond_to do |format|
@@ -70,6 +69,6 @@ class TurnoController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def turno_params
-      params.require(:turno).permit(:id_paciente, :id_usuario, :hora, :dia)
+      params.require(:turno).permit(:user_id, :paciente_id, :hora, :dia)
     end
 end

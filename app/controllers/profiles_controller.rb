@@ -6,7 +6,7 @@ class ProfilesController < ApplicationController
 
   def show
     if @user = User.where(username: params[:id]).first
-      @compra_tarje = @user.compra_tarjes.page(params[:page])
+      #@compra_tarje = @user.compra_tarjes.page(params[:page])
     else
       flash[:alert] = 'Profile not found.'
       redirect_to profiles_path

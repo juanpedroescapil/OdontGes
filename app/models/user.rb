@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
  
   has_many :pacientes
   has_many :obra_socials
+  has_many :turnos
 
 
   validates :username,
